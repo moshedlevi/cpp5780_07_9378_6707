@@ -2,7 +2,7 @@
    File: Student.cpp
    Description: this is implement file of function for struct Student
    Course: 150018 C++ Workshop
-   Exercise 7, Question 1
+   Exercise 7, Question 2
    Authors: David Ovits 311179378, Moshe David Levi 200436707
 */
 
@@ -39,3 +39,9 @@ fstream& operator>>(fstream& in, Student& s)
 	return in;
 }
 
+void Student::setInfo(const uint id, const std::string lastName, const std::string firstName)
+{
+	_id = id;
+	strcpy(_lastName, lastName.substr(0, 20).c_str());
+	strcpy(_firstName, firstName.substr(0, 20).c_str());
+}

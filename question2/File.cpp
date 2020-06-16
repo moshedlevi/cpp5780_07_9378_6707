@@ -3,7 +3,7 @@
    File: File.cpp
    Description: this is implement file of function to manage Students files
    Course: 150018 C++ Workshop
-   Exercise 7, Question 1
+   Exercise 7, Question 2
    Authors: David Ovits 311179378, Moshe David Levi 200436707
 */
 
@@ -22,10 +22,10 @@ std::fstream& createStudentsFile(const std::string fileName)
         throw "error opening file!";
     }
 
-    uint lastID = 10;
+    uint startID = 0;
         
     // write to file the max number of current students
-    newFile.write((char*)&lastID, sizeof(lastID));
+    newFile.write((char*)&startID, sizeof(startID));
 
     // init file with 10 empty students
     for (int i = 1; i <= 10; ++i) {
@@ -73,4 +73,16 @@ std::fstream& readStudentsFile(const std::string fileName)
     existFile.close();
 
     return existFile;
+}
+
+bool fileExist(const std::string fileName) {
+    std::ifstream file(fileName);
+
+    if (file) {
+        file.close();
+        return true;
+    }
+    else {
+        return false;
+    }
 }

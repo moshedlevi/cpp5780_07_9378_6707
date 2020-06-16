@@ -2,7 +2,7 @@
    File: Student.h
    Description: this is header file of struct Student
    Course: 150018 C++ Workshop
-   Exercise 7, Question 1
+   Exercise 7, Question 2
    Authors: David Ovits 311179378, Moshe David Levi 200436707
 */
 #pragma warning (disable:4996)
@@ -11,6 +11,7 @@
 #define __STUDENT_H_
 
 #include "mytypes.h"
+//#include "ManageStudents.h"
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -24,8 +25,8 @@ private:
     char _course2 = 'N';
     char _course3 = 'N';
     char _course4 = 'N';
-    char _course5 = 'N';  
-
+    char _course5 = 'N';
+    
 public:
     // static field to hold empty student
     static const Student _emptyStudent;
@@ -42,6 +43,8 @@ public:
         strcpy(_firstName, firstName.substr(0,20).c_str());
     };
 
+    void setInfo(const uint id, const std::string lastName, const std::string firstName);
+
     // operators:
 
     // friend operator ostream extraction
@@ -53,7 +56,7 @@ public:
     // friend operator file stram insertion
     friend std::fstream& operator >> (std::fstream& in, Student& s);
 
-    friend extern std::fstream& createStudentsFile(const std::string fileName);
+    friend extern class ManageStudents;
 };
 
 // operator cout stream extraction from student

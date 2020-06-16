@@ -18,6 +18,21 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="File.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="ManageStudents.cpp" />
+    <ClCompile Include="menu.cpp" />
+    <ClCompile Include="mytypes.cpp" />
+    <ClCompile Include="Student.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="File.h" />
+    <ClInclude Include="ManageStudents.h" />
+    <ClInclude Include="menu.h" />
+    <ClInclude Include="mytypes.h" />
+    <ClInclude Include="Student.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{0AB5A19B-5405-49B3-947E-EC3280A240E6}</ProjectGuid>
@@ -137,8 +152,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
