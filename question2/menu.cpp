@@ -20,6 +20,7 @@ MenuOption operator++(MenuOption& rhs) {
 const char* MenuOptionLine[LAST_MENU_OPTION + 1] {
 	"Exit",
 	"Open students file to manage",
+	"Show current filename",
 	"Add Student to file",
 	"Delete Student from file",
 	"Print info for student",

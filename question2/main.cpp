@@ -16,15 +16,16 @@ using namespace std;
 int main() {
 	ManageStudents ms1, ms2, ms3;
 	MenuOption choice;
+	char prev;
+	prev = cout.fill(static_cast<char>(205));
 
-
-	cout << static_cast<char>(201) << setfill(static_cast<char>(205)) << setw(54) << "" << static_cast<char>(187) << endl
-		<< static_cast<char>(186) << "     you MUST start with option 1 to select file!     " << static_cast<char>(186) << endl
-		<< static_cast<char>(200) << setfill(static_cast<char>(205)) << setw(54) << "" << static_cast<char>(188) << endl;
+	cout << static_cast<char>(201) << setw(54) << "" << static_cast<char>(187) << endl
+		<< static_cast<char>(186) << "      you MUST start with option 1 to open file!      " << static_cast<char>(186) << endl
+		<< static_cast<char>(200) << setw(54) << "" << static_cast<char>(188) << endl;
 	
-	setfill(" ");
+	cout.fill(prev);
 
-	while ((choice = menu()) != EXIT) {
+	while ((choice =  menu()) != EXIT) {
 		switch (choice) {
 		case OPEN:
 			{
@@ -64,6 +65,13 @@ int main() {
 				cout << "file '" << filename << "' is open and ready to manage!" << endl;
 			}
 			}
+			break;
+		case CURRENT_FILE:
+			if (ms1.getFilename() != "")
+				cout << "current file is: '" << ms1.getFilename() << "'" << endl;
+			else
+				cout << "still file not open." << endl;
+
 			break;
 		case ADD:
 			{
