@@ -1,4 +1,4 @@
-/*
+﻿/*
    File: main.cpp
    Description: this is main program file for test manage file of students
    Course: 150018 C++ Workshop
@@ -7,6 +7,7 @@
 */
 
 #include <iostream>
+#include <iomanip> 
 #include "ManageStudents.h"
 #include "menu.h"
 
@@ -15,6 +16,13 @@ using namespace std;
 int main() {
 	ManageStudents ms1, ms2, ms3;
 	MenuOption choice;
+
+
+	cout << static_cast<char>(201) << setfill(static_cast<char>(205)) << setw(54) << "" << static_cast<char>(187) << endl
+		<< static_cast<char>(186) << "     you MUST start with option 1 to select file!     " << static_cast<char>(186) << endl
+		<< static_cast<char>(200) << setfill(static_cast<char>(205)) << setw(54) << "" << static_cast<char>(188) << endl;
+	
+	setfill(" ");
 
 	while ((choice = menu()) != EXIT) {
 		switch (choice) {
