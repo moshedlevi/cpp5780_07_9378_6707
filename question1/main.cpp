@@ -11,15 +11,16 @@
 
 using namespace std;
 
-void main() {
+int main() {
 	string newFileName;
 
 	// get file name from user
-	cout << "insert name for new file:" << endl;
+	cout << "insert name for new file: ";
 	cin >> newFileName;
 
 
 	try {
+		// create new file with given name
 		createStudentsFile(newFileName);
 		cout << "create file is complete!" << endl;
 	}
@@ -28,6 +29,7 @@ void main() {
 	}
 
 	try {
+		// read from file to check if file is OK
 		readStudentsFile(newFileName);
 		cout << "Reading from student file is complete!" << endl;
 	}
@@ -35,5 +37,5 @@ void main() {
 		cout << err << endl;
 	}	
 	
-	return;
+	return 0;
 }

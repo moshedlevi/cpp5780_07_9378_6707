@@ -20,7 +20,7 @@ private:
     uint _id = 0;
     char _lastName[21] = "";
     char _firstName[21] = "";
-    char _course1 = 'N';
+    char _course1 = 'N';  // get Y or N, to set register info for course
     char _course2 = 'N';
     char _course3 = 'N';
     char _course4 = 'N';
@@ -44,25 +44,24 @@ public:
 
     // operators:
 
-    // friend operator ostream extraction
+    // friend operator ostream extraction (with titles)
     friend std::ostream& operator << (std::ostream& out,const Student& s);
 
-    // friend operator file stream extraction
+    // friend operator file stream extraction - write to file (binary)
     friend std::fstream& operator << (std::fstream& out,const Student& s);
 
-    // friend operator file stram insertion
+    // friend operator file stram insertion - read from file (binary)
     friend std::fstream& operator >> (std::fstream& in, Student& s);
 
-    friend extern std::fstream& createStudentsFile(const std::string fileName);
 };
 
-// operator cout stream extraction from student
+// operator cout stream extraction from student (with titles)
 std::ostream& operator << (std::ostream& out, const Student& s);
 
-// operator file stream extraction from student
+// operator file stream extraction from student - write to file (binary)
 std::fstream& operator << (std::fstream& out, const Student& s);
 
-// operator file stram insertion to student
+// operator file stram insertion to student - read from file (binary)
 std::fstream& operator >> (std::fstream& in, Student& s);
 
 #endif __STUDENT_H_

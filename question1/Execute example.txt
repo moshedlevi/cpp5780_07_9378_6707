@@ -1,0 +1,88 @@
+insert name for new file: test5780.dat
+create file is complete!
+current records in file: 10
+ID: 0
+Last name:
+First name:
+Course 1: N
+Course 2: N
+Course 3: N
+Course 4: N
+Course 5: N
+ID: 0
+Last name:
+First name:
+Course 1: N
+Course 2: N
+Course 3: N
+Course 4: N
+Course 5: N
+ID: 0
+Last name:
+First name:
+Course 1: N
+Course 2: N
+Course 3: N
+Course 4: N
+Course 5: N
+ID: 0
+Last name:
+First name:
+Course 1: N
+Course 2: N
+Course 3: N
+Course 4: N
+Course 5: N
+ID: 0
+Last name:
+First name:
+Course 1: N
+Course 2: N
+Course 3: N
+Course 4: N
+Course 5: N
+ID: 0
+Last name:
+First name:
+Course 1: N
+Course 2: N
+Course 3: N
+Course 4: N
+Course 5: N
+ID: 0
+Last name:
+First name:
+Course 1: N
+Course 2: N
+Course 3: N
+Course 4: N
+Course 5: N
+ID: 0
+Last name:
+First name:
+Course 1: N
+Course 2: N
+Course 3: N
+Course 4: N
+Course 5: N
+ID: 0
+Last name:
+First name:
+Course 1: N
+Course 2: N
+Course 3: N
+Course 4: N
+Course 5: N
+ID: 0
+Last name:
+First name:
+Course 1: N
+Course 2: N
+Course 3: N
+Course 4: N
+Course 5: N
+Reading from student file is complete!
+
+C:\Users\moshe\source\Sadna\cpp5780_07_9378_6707\Debug\question1.exe (process 8796) exited with code 0.
+To automatically close the console when debugging stops, enable Tools->Options->Debugging->Automatically close the console when debugging stops.
+Press any key to close this window . . .

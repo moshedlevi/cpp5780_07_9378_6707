@@ -1,0 +1,866 @@
+╔══════════════════════════════════════════════════════╗
+║      you MUST start with option 1 to open file!      ║
+╚══════════════════════════════════════════════════════╝
+
+Menu options:
+
+   0    --      Exit
+   1    --      Open students file to manage
+   2    --      Show current filename
+   3    --      Add Student to file
+   4    --      Delete Student from file
+   5    --      Print info for student
+   6    --      Check registration for student
+   7    --      Set registration for student
+   8    --      Cancel registration for student
+   9    --      Print students list for course
+  10    --      Print list all registered students
+  11    --      Combine 2 exist manage files to new Managment file
+
+Please choose a menu option: 1
+enter filename for managment file: jan2020.dat
+file 'jan2020.dat' not exist!
+do you want to create new file with this name? (y\n) y
+file 'jan2020.dat' created succeed!
+file 'jan2020.dat' is open and ready to manage!
+
+Menu options:
+
+   0    --      Exit
+   1    --      Open students file to manage
+   2    --      Show current filename
+   3    --      Add Student to file
+   4    --      Delete Student from file
+   5    --      Print info for student
+   6    --      Check registration for student
+   7    --      Set registration for student
+   8    --      Cancel registration for student
+   9    --      Print students list for course
+  10    --      Print list all registered students
+  11    --      Combine 2 exist manage files to new Managment file
+
+Please choose a menu option: 2
+current file is: 'jan2020.dat'
+
+Menu options:
+
+   0    --      Exit
+   1    --      Open students file to manage
+   2    --      Show current filename
+   3    --      Add Student to file
+   4    --      Delete Student from file
+   5    --      Print info for student
+   6    --      Check registration for student
+   7    --      Set registration for student
+   8    --      Cancel registration for student
+   9    --      Print students list for course
+  10    --      Print list all registered students
+  11    --      Combine 2 exist manage files to new Managment file
+
+Please choose a menu option: 3
+Enter student id to add: 1
+Enter student last name: ovits
+Enter student first name: david
+
+Menu options:
+
+   0    --      Exit
+   1    --      Open students file to manage
+   2    --      Show current filename
+   3    --      Add Student to file
+   4    --      Delete Student from file
+   5    --      Print info for student
+   6    --      Check registration for student
+   7    --      Set registration for student
+   8    --      Cancel registration for student
+   9    --      Print students list for course
+  10    --      Print list all registered students
+  11    --      Combine 2 exist manage files to new Managment file
+
+Please choose a menu option: 7
+Enter student id to register: 1
+Enter course id: 1
+
+Menu options:
+
+   0    --      Exit
+   1    --      Open students file to manage
+   2    --      Show current filename
+   3    --      Add Student to file
+   4    --      Delete Student from file
+   5    --      Print info for student
+   6    --      Check registration for student
+   7    --      Set registration for student
+   8    --      Cancel registration for student
+   9    --      Print students list for course
+  10    --      Print list all registered students
+  11    --      Combine 2 exist manage files to new Managment file
+
+Please choose a menu option: 7
+Enter student id to register: 1
+Enter course id: 2
+
+Menu options:
+
+   0    --      Exit
+   1    --      Open students file to manage
+   2    --      Show current filename
+   3    --      Add Student to file
+   4    --      Delete Student from file
+   5    --      Print info for student
+   6    --      Check registration for student
+   7    --      Set registration for student
+   8    --      Cancel registration for student
+   9    --      Print students list for course
+  10    --      Print list all registered students
+  11    --      Combine 2 exist manage files to new Managment file
+
+Please choose a menu option: 7
+Enter student id to register: 1
+Enter course id: 4
+
+Menu options:
+
+   0    --      Exit
+   1    --      Open students file to manage
+   2    --      Show current filename
+   3    --      Add Student to file
+   4    --      Delete Student from file
+   5    --      Print info for student
+   6    --      Check registration for student
+   7    --      Set registration for student
+   8    --      Cancel registration for student
+   9    --      Print students list for course
+  10    --      Print list all registered students
+  11    --      Combine 2 exist manage files to new Managment file
+
+Please choose a menu option: 7
+Enter student id to register: 1
+Enter course id: 5
+
+Menu options:
+
+   0    --      Exit
+   1    --      Open students file to manage
+   2    --      Show current filename
+   3    --      Add Student to file
+   4    --      Delete Student from file
+   5    --      Print info for student
+   6    --      Check registration for student
+   7    --      Set registration for student
+   8    --      Cancel registration for student
+   9    --      Print students list for course
+  10    --      Print list all registered students
+  11    --      Combine 2 exist manage files to new Managment file
+
+Please choose a menu option: 5
+Enter student id to print information: 1
+ID: 1
+Last name: ovits
+First name: david
+Course 1: Y
+Course 2: Y
+Course 3: N
+Course 4: Y
+Course 5: Y
+
+Menu options:
+
+   0    --      Exit
+   1    --      Open students file to manage
+   2    --      Show current filename
+   3    --      Add Student to file
+   4    --      Delete Student from file
+   5    --      Print info for student
+   6    --      Check registration for student
+   7    --      Set registration for student
+   8    --      Cancel registration for student
+   9    --      Print students list for course
+  10    --      Print list all registered students
+  11    --      Combine 2 exist manage files to new Managment file
+
+Please choose a menu option: 3
+Enter student id to add: 15
+Enter student last name: albert
+Enter student first name: shuki
+
+Menu options:
+
+   0    --      Exit
+   1    --      Open students file to manage
+   2    --      Show current filename
+   3    --      Add Student to file
+   4    --      Delete Student from file
+   5    --      Print info for student
+   6    --      Check registration for student
+   7    --      Set registration for student
+   8    --      Cancel registration for student
+   9    --      Print students list for course
+  10    --      Print list all registered students
+  11    --      Combine 2 exist manage files to new Managment file
+
+Please choose a menu option: 7
+Enter student id to register: 15
+Enter course id: 1
+
+Menu options:
+
+   0    --      Exit
+   1    --      Open students file to manage
+   2    --      Show current filename
+   3    --      Add Student to file
+   4    --      Delete Student from file
+   5    --      Print info for student
+   6    --      Check registration for student
+   7    --      Set registration for student
+   8    --      Cancel registration for student
+   9    --      Print students list for course
+  10    --      Print list all registered students
+  11    --      Combine 2 exist manage files to new Managment file
+
+Please choose a menu option: 7
+Enter student id to register: 15
+Enter course id: 2
+
+Menu options:
+
+   0    --      Exit
+   1    --      Open students file to manage
+   2    --      Show current filename
+   3    --      Add Student to file
+   4    --      Delete Student from file
+   5    --      Print info for student
+   6    --      Check registration for student
+   7    --      Set registration for student
+   8    --      Cancel registration for student
+   9    --      Print students list for course
+  10    --      Print list all registered students
+  11    --      Combine 2 exist manage files to new Managment file
+
+Please choose a menu option: 7
+Enter student id to register: 15
+Enter course id: 3
+
+Menu options:
+
+   0    --      Exit
+   1    --      Open students file to manage
+   2    --      Show current filename
+   3    --      Add Student to file
+   4    --      Delete Student from file
+   5    --      Print info for student
+   6    --      Check registration for student
+   7    --      Set registration for student
+   8    --      Cancel registration for student
+   9    --      Print students list for course
+  10    --      Print list all registered students
+  11    --      Combine 2 exist manage files to new Managment file
+
+Please choose a menu option: 5
+Enter student id to print information: 15
+ID: 15
+Last name: albert
+First name: shuki
+Course 1: Y
+Course 2: Y
+Course 3: Y
+Course 4: N
+Course 5: N
+
+Menu options:
+
+   0    --      Exit
+   1    --      Open students file to manage
+   2    --      Show current filename
+   3    --      Add Student to file
+   4    --      Delete Student from file
+   5    --      Print info for student
+   6    --      Check registration for student
+   7    --      Set registration for student
+   8    --      Cancel registration for student
+   9    --      Print students list for course
+  10    --      Print list all registered students
+  11    --      Combine 2 exist manage files to new Managment file
+
+Please choose a menu option: 1
+enter filename for managment file: jan2020.dat
+file 'jan2020.dat' is open and ready to manage!
+
+Menu options:
+
+   0    --      Exit
+   1    --      Open students file to manage
+   2    --      Show current filename
+   3    --      Add Student to file
+   4    --      Delete Student from file
+   5    --      Print info for student
+   6    --      Check registration for student
+   7    --      Set registration for student
+   8    --      Cancel registration for student
+   9    --      Print students list for course
+  10    --      Print list all registered students
+  11    --      Combine 2 exist manage files to new Managment file
+
+Please choose a menu option: 1
+enter filename for managment file: feb2020.dat
+file 'feb2020.dat' not exist!
+do you want to create new file with this name? (y\n) y
+file 'feb2020.dat' created succeed!
+file 'feb2020.dat' is open and ready to manage!
+
+Menu options:
+
+   0    --      Exit
+   1    --      Open students file to manage
+   2    --      Show current filename
+   3    --      Add Student to file
+   4    --      Delete Student from file
+   5    --      Print info for student
+   6    --      Check registration for student
+   7    --      Set registration for student
+   8    --      Cancel registration for student
+   9    --      Print students list for course
+  10    --      Print list all registered students
+  11    --      Combine 2 exist manage files to new Managment file
+
+Please choose a menu option: 3
+Enter student id to add: 2
+Enter student last name: zilberstain
+Enter student first name: dan
+
+Menu options:
+
+   0    --      Exit
+   1    --      Open students file to manage
+   2    --      Show current filename
+   3    --      Add Student to file
+   4    --      Delete Student from file
+   5    --      Print info for student
+   6    --      Check registration for student
+   7    --      Set registration for student
+   8    --      Cancel registration for student
+   9    --      Print students list for course
+  10    --      Print list all registered students
+  11    --      Combine 2 exist manage files to new Managment file
+
+Please choose a menu option: 7
+Enter student id to register: 2
+Enter course id: 1
+
+Menu options:
+
+   0    --      Exit
+   1    --      Open students file to manage
+   2    --      Show current filename
+   3    --      Add Student to file
+   4    --      Delete Student from file
+   5    --      Print info for student
+   6    --      Check registration for student
+   7    --      Set registration for student
+   8    --      Cancel registration for student
+   9    --      Print students list for course
+  10    --      Print list all registered students
+  11    --      Combine 2 exist manage files to new Managment file
+
+Please choose a menu option: 5
+Enter student id to print information: 2
+ID: 2
+Last name: zilberstain
+First name: dan
+Course 1: Y
+Course 2: N
+Course 3: N
+Course 4: N
+Course 5: N
+
+Menu options:
+
+   0    --      Exit
+   1    --      Open students file to manage
+   2    --      Show current filename
+   3    --      Add Student to file
+   4    --      Delete Student from file
+   5    --      Print info for student
+   6    --      Check registration for student
+   7    --      Set registration for student
+   8    --      Cancel registration for student
+   9    --      Print students list for course
+  10    --      Print list all registered students
+  11    --      Combine 2 exist manage files to new Managment file
+
+Please choose a menu option: 5
+Enter student id to print information: 1
+check information for student 1 failed!
+
+Menu options:
+
+   0    --      Exit
+   1    --      Open students file to manage
+   2    --      Show current filename
+   3    --      Add Student to file
+   4    --      Delete Student from file
+   5    --      Print info for student
+   6    --      Check registration for student
+   7    --      Set registration for student
+   8    --      Cancel registration for student
+   9    --      Print students list for course
+  10    --      Print list all registered students
+  11    --      Combine 2 exist manage files to new Managment file
+
+Please choose a menu option: 6
+Enter student id to check registeration: 2
+Enter course id: 4
+student 2 is NOT REGISTER to course 4!
+
+Menu options:
+
+   0    --      Exit
+   1    --      Open students file to manage
+   2    --      Show current filename
+   3    --      Add Student to file
+   4    --      Delete Student from file
+   5    --      Print info for student
+   6    --      Check registration for student
+   7    --      Set registration for student
+   8    --      Cancel registration for student
+   9    --      Print students list for course
+  10    --      Print list all registered students
+  11    --      Combine 2 exist manage files to new Managment file
+
+Please choose a menu option: 6
+Enter student id to check registeration: 3
+Enter course id: 4
+check registeration for student 3 to course 4 failed!
+
+Menu options:
+
+   0    --      Exit
+   1    --      Open students file to manage
+   2    --      Show current filename
+   3    --      Add Student to file
+   4    --      Delete Student from file
+   5    --      Print info for student
+   6    --      Check registration for student
+   7    --      Set registration for student
+   8    --      Cancel registration for student
+   9    --      Print students list for course
+  10    --      Print list all registered students
+  11    --      Combine 2 exist manage files to new Managment file
+
+Please choose a menu option: 3
+Enter student id to add: 15
+Enter student last name: albirt
+Enter student first name: yeoshua
+
+Menu options:
+
+   0    --      Exit
+   1    --      Open students file to manage
+   2    --      Show current filename
+   3    --      Add Student to file
+   4    --      Delete Student from file
+   5    --      Print info for student
+   6    --      Check registration for student
+   7    --      Set registration for student
+   8    --      Cancel registration for student
+   9    --      Print students list for course
+  10    --      Print list all registered students
+  11    --      Combine 2 exist manage files to new Managment file
+
+Please choose a menu option: 7
+Enter student id to register: 15
+Enter course id: 5
+
+Menu options:
+
+   0    --      Exit
+   1    --      Open students file to manage
+   2    --      Show current filename
+   3    --      Add Student to file
+   4    --      Delete Student from file
+   5    --      Print info for student
+   6    --      Check registration for student
+   7    --      Set registration for student
+   8    --      Cancel registration for student
+   9    --      Print students list for course
+  10    --      Print list all registered students
+  11    --      Combine 2 exist manage files to new Managment file
+
+Please choose a menu option: 3
+Enter student id to add: 17
+Enter student last name: menzer
+Enter student first name: asher
+
+Menu options:
+
+   0    --      Exit
+   1    --      Open students file to manage
+   2    --      Show current filename
+   3    --      Add Student to file
+   4    --      Delete Student from file
+   5    --      Print info for student
+   6    --      Check registration for student
+   7    --      Set registration for student
+   8    --      Cancel registration for student
+   9    --      Print students list for course
+  10    --      Print list all registered students
+  11    --      Combine 2 exist manage files to new Managment file
+
+Please choose a menu option: 7
+Enter student id to register: 17
+Enter course id: 4
+
+Menu options:
+
+   0    --      Exit
+   1    --      Open students file to manage
+   2    --      Show current filename
+   3    --      Add Student to file
+   4    --      Delete Student from file
+   5    --      Print info for student
+   6    --      Check registration for student
+   7    --      Set registration for student
+   8    --      Cancel registration for student
+   9    --      Print students list for course
+  10    --      Print list all registered students
+  11    --      Combine 2 exist manage files to new Managment file
+
+Please choose a menu option: 3
+Enter student id to add: 14
+Enter student last name: kaminezki
+Enter student first name: david
+
+Menu options:
+
+   0    --      Exit
+   1    --      Open students file to manage
+   2    --      Show current filename
+   3    --      Add Student to file
+   4    --      Delete Student from file
+   5    --      Print info for student
+   6    --      Check registration for student
+   7    --      Set registration for student
+   8    --      Cancel registration for student
+   9    --      Print students list for course
+  10    --      Print list all registered students
+  11    --      Combine 2 exist manage files to new Managment file
+
+Please choose a menu option: 10
+ID: 2
+Last name: zilberstain
+First name: dan
+Course 1: Y
+Course 2: N
+Course 3: N
+Course 4: N
+Course 5: N
+ID: 15
+Last name: albirt
+First name: yeoshua
+Course 1: N
+Course 2: N
+Course 3: N
+Course 4: N
+Course 5: Y
+ID: 17
+Last name: menzer
+First name: asher
+Course 1: N
+Course 2: N
+Course 3: N
+Course 4: Y
+Course 5: N
+
+Menu options:
+
+   0    --      Exit
+   1    --      Open students file to manage
+   2    --      Show current filename
+   3    --      Add Student to file
+   4    --      Delete Student from file
+   5    --      Print info for student
+   6    --      Check registration for student
+   7    --      Set registration for student
+   8    --      Cancel registration for student
+   9    --      Print students list for course
+  10    --      Print list all registered students
+  11    --      Combine 2 exist manage files to new Managment file
+
+Please choose a menu option: 5
+Enter student id to print information: 14
+ID: 14
+Last name: kaminezki
+First name: david
+Course 1: N
+Course 2: N
+Course 3: N
+Course 4: N
+Course 5: N
+
+Menu options:
+
+   0    --      Exit
+   1    --      Open students file to manage
+   2    --      Show current filename
+   3    --      Add Student to file
+   4    --      Delete Student from file
+   5    --      Print info for student
+   6    --      Check registration for student
+   7    --      Set registration for student
+   8    --      Cancel registration for student
+   9    --      Print students list for course
+  10    --      Print list all registered students
+  11    --      Combine 2 exist manage files to new Managment file
+
+Please choose a menu option: 2
+current file is: 'feb2020.dat'
+
+Menu options:
+
+   0    --      Exit
+   1    --      Open students file to manage
+   2    --      Show current filename
+   3    --      Add Student to file
+   4    --      Delete Student from file
+   5    --      Print info for student
+   6    --      Check registration for student
+   7    --      Set registration for student
+   8    --      Cancel registration for student
+   9    --      Print students list for course
+  10    --      Print list all registered students
+  11    --      Combine 2 exist manage files to new Managment file
+
+Please choose a menu option: 11
+combine current open file 'feb2020.dat' with,
+enter name for second manage file: marc2020.dat
+combine files failed!
+
+Menu options:
+
+   0    --      Exit
+   1    --      Open students file to manage
+   2    --      Show current filename
+   3    --      Add Student to file
+   4    --      Delete Student from file
+   5    --      Print info for student
+   6    --      Check registration for student
+   7    --      Set registration for student
+   8    --      Cancel registration for student
+   9    --      Print students list for course
+  10    --      Print list all registered students
+  11    --      Combine 2 exist manage files to new Managment file
+
+Please choose a menu option: 11
+combine current open file 'feb2020.dat' with,
+enter name for second manage file: jan2020.dat
+combine succeed. name of the new file 'feb2020+jan2020.dat'!
+
+Menu options:
+
+   0    --      Exit
+   1    --      Open students file to manage
+   2    --      Show current filename
+   3    --      Add Student to file
+   4    --      Delete Student from file
+   5    --      Print info for student
+   6    --      Check registration for student
+   7    --      Set registration for student
+   8    --      Cancel registration for student
+   9    --      Print students list for course
+  10    --      Print list all registered students
+  11    --      Combine 2 exist manage files to new Managment file
+
+Please choose a menu option: 1
+enter filename for managment file: feb2020+jan2020.dat
+file 'feb2020+jan2020.dat' is open and ready to manage!
+
+Menu options:
+
+   0    --      Exit
+   1    --      Open students file to manage
+   2    --      Show current filename
+   3    --      Add Student to file
+   4    --      Delete Student from file
+   5    --      Print info for student
+   6    --      Check registration for student
+   7    --      Set registration for student
+   8    --      Cancel registration for student
+   9    --      Print students list for course
+  10    --      Print list all registered students
+  11    --      Combine 2 exist manage files to new Managment file
+
+Please choose a menu option: 10
+ID: 2
+Last name: zilberstain
+First name: dan
+Course 1: Y
+Course 2: N
+Course 3: N
+Course 4: N
+Course 5: N
+ID: 15
+Last name: albirt
+First name: yeoshua
+Course 1: N
+Course 2: N
+Course 3: N
+Course 4: N
+Course 5: Y
+ID: 17
+Last name: menzer
+First name: asher
+Course 1: N
+Course 2: N
+Course 3: N
+Course 4: Y
+Course 5: N
+
+Menu options:
+
+   0    --      Exit
+   1    --      Open students file to manage
+   2    --      Show current filename
+   3    --      Add Student to file
+   4    --      Delete Student from file
+   5    --      Print info for student
+   6    --      Check registration for student
+   7    --      Set registration for student
+   8    --      Cancel registration for student
+   9    --      Print students list for course
+  10    --      Print list all registered students
+  11    --      Combine 2 exist manage files to new Managment file
+
+Please choose a menu option: 5
+Enter student id to print information: 14
+ID: 14
+Last name: kaminezki
+First name: david
+Course 1: N
+Course 2: N
+Course 3: N
+Course 4: N
+Course 5: N
+
+Menu options:
+
+   0    --      Exit
+   1    --      Open students file to manage
+   2    --      Show current filename
+   3    --      Add Student to file
+   4    --      Delete Student from file
+   5    --      Print info for student
+   6    --      Check registration for student
+   7    --      Set registration for student
+   8    --      Cancel registration for student
+   9    --      Print students list for course
+  10    --      Print list all registered students
+  11    --      Combine 2 exist manage files to new Managment file
+
+
+Please choose a menu option: 11
+combine current open file 'feb2020.dat' with,
+enter name for second manage file: mach
+combine files failed!
+
+Menu options:
+
+   0    --      Exit
+   1    --      Open students file to manage
+   2    --      Show current filename
+   3    --      Add Student to file
+   4    --      Delete Student from file
+   5    --      Print info for student
+   6    --      Check registration for student
+   7    --      Set registration for student
+   8    --      Cancel registration for student
+   9    --      Print students list for course
+  10    --      Print list all registered students
+  11    --      Combine 2 exist manage files to new Managment file
+
+Please choose a menu option: 11
+combine current open file 'feb2020.dat' with,
+enter name for second manage file: jan2020.dat
+combine succeed. name of the new file 'feb2020+jan20202.dat'!
+
+Menu options:
+
+   0    --      Exit
+   1    --      Open students file to manage
+   2    --      Show current filename
+   3    --      Add Student to file
+   4    --      Delete Student from file
+   5    --      Print info for student
+   6    --      Check registration for student
+   7    --      Set registration for student
+   8    --      Cancel registration for student
+   9    --      Print students list for course
+  10    --      Print list all registered students
+  11    --      Combine 2 exist manage files to new Managment file
+
+Please choose a menu option: 1
+enter filename for managment file: feb2020+jan20202.dat
+file 'feb2020+jan20202.dat' is open and ready to manage!
+
+Menu options:
+
+   0    --      Exit
+   1    --      Open students file to manage
+   2    --      Show current filename
+   3    --      Add Student to file
+   4    --      Delete Student from file
+   5    --      Print info for student
+   6    --      Check registration for student
+   7    --      Set registration for student
+   8    --      Cancel registration for student
+   9    --      Print students list for course
+  10    --      Print list all registered students
+  11    --      Combine 2 exist manage files to new Managment file
+
+Please choose a menu option: 10
+ID: 1
+Last name: ovits
+First name: david
+Course 1: Y
+Course 2: Y
+Course 3: N
+Course 4: Y
+Course 5: Y
+ID: 2
+Last name: zilberstain
+First name: dan
+Course 1: Y
+Course 2: N
+Course 3: N
+Course 4: N
+Course 5: N
+ID: 15
+Last name: albirt
+First name: yeoshua
+Course 1: Y
+Course 2: Y
+Course 3: Y
+Course 4: N
+Course 5: Y
+ID: 17
+Last name: menzer
+First name: asher
+Course 1: N
+Course 2: N
+Course 3: N
+Course 4: Y
+Course 5: N
+
+Menu options:
+
+   0    --      Exit
+   1    --      Open students file to manage
+   2    --      Show current filename
+   3    --      Add Student to file
+   4    --      Delete Student from file
+   5    --      Print info for student
+   6    --      Check registration for student
+   7    --      Set registration for student
+   8    --      Cancel registration for student
+   9    --      Print students list for course
+  10    --      Print list all registered students
+  11    --      Combine 2 exist manage files to new Managment file

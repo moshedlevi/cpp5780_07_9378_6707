@@ -14,8 +14,10 @@
 #include <fstream>
 #include <string>
 
+// create new file with 10 records of empty students, get filename to create
 std::fstream& createStudentsFile(const std::string fileName);
 
+// read students records from file, get filename to read
 std::fstream& readStudentsFile(const std::string fileName);
 
 bool fileExist(const std::string fileName);

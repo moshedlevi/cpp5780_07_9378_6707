@@ -6,20 +6,14 @@
    Authors: David Ovits 311179378, Moshe David Levi 200436707
 */
 
-
 #include "Student.h"
 using namespace std;
 
 // init static field to empty student
 Student const Student::_emptyStudent;
 
-fstream& operator<<(fstream& out,const Student& s)
-{
-	out.write((char*)&s, sizeof(s));
-	return out;
-}
-
-ostream& operator<<(ostream& out, const Student& s)
+// operator cout stream extraction from student (with titles)
+ostream& operator << (ostream& out, const Student& s)
 {
 	out << "ID: " << s._id << endl;
 	out << "Last name: " << s._lastName << endl;
@@ -33,12 +27,21 @@ ostream& operator<<(ostream& out, const Student& s)
 	return out;
 }
 
-fstream& operator>>(fstream& in, Student& s)
+// operator file stream extraction from student - write to file (binary)
+fstream& operator << (fstream& out, const Student& s)
+{
+	out.write((char*)&s, sizeof(s));
+	return out;
+}
+
+// operator file stram insertion to student - read from file (binary)
+fstream& operator >> (fstream& in, Student& s)
 {
 	in.read((char*)&s, sizeof(s));
 	return in;
 }
 
+// set info in student object, get id, last name and first name
 void Student::setInfo(const uint id, const std::string lastName, const std::string firstName)
 {
 	_id = id;
