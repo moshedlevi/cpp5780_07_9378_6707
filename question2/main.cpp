@@ -10,11 +10,10 @@
 #include "ManageStudents.h"
 #include "menu.h"
 
-
 using namespace std;
 
 int main() {
-	ManageStudents ms1, ms2;
+	ManageStudents ms1, ms2, ms3;
 	MenuOption choice;
 
 	while ((choice = menu()) != EXIT) {
@@ -37,7 +36,7 @@ int main() {
 				if ((answer == 'y') || (answer == 'Y')) {
 					try {
 						createStudentsFile(filename);
-						cout << "file '" << filename << "' created succeed!";
+						cout << "file '" << filename << "' created succeed!" << endl;
 
 						ms1.setFileName(filename);
 
@@ -98,7 +97,7 @@ int main() {
 			{
 				uint sid;
 
-				cout << "Enter student id to print information:" ;
+				cout << "Enter student id to print information: " ;
 				cin >> sid;
 
 				ms1.printStudent(sid);
@@ -113,10 +112,10 @@ int main() {
 			uint sid, courseid;
 			bool check;
 
-			cout << "Enter student id to check registeration:";
+			cout << "Enter student id to check registeration: ";
 			cin >> sid;
 
-			cout << "Enter course id:";
+			cout << "Enter course id: ";
 			cin >> courseid;
 
 			check = ms1.checkStudent(sid, courseid);
@@ -133,10 +132,10 @@ int main() {
 		case SET_UNREG:
 			{
 			uint sid, courseid;
-			cout << "Enter student id to " << (choice == SET_REG ? "" : "un") << "register:";
+			cout << "Enter student id to " << (choice == SET_REG ? "" : "un") << "register: ";
 			cin >> sid;
 
-			cout << "Enter course id:";
+			cout << "Enter course id: ";
 			cin >> courseid;
 
 			ms1.regStudent(sid, courseid, (choice == SET_REG ? true : false));
@@ -150,7 +149,7 @@ int main() {
 		case PRINT_REG_COURSE:
 			{
 				uint courseid;
-				cout << "Enter course id to print list" << endl << "(insert 0 to print all reg students)";
+				cout << "Enter course id to print list" << endl << "(insert 0 to print all reg students): ";
 				cin >> courseid;
 
 				ms1.printRegStudents(courseid);
@@ -168,6 +167,23 @@ int main() {
 			if (!(ms1))
 				cout << "print all registraion students list failed!" << endl;
 
+			break;
+		case COMBINE_FILES:
+			{
+			string filename;
+
+			cout << "combine current open file '" << ms1.getFilename() << "' with," << endl << 
+				"enter name for second manage file: ";
+			cin >> filename;
+
+			ms2.setFileName(filename);
+
+			ms3 = ms1 + ms2;
+			if (!ms3)
+				cout << "combine files failed!" << endl;
+			else
+				cout << "combine succeed. name of the new file '" << ms3.getFilename() << "'!" << endl;
+			}
 			break;
 
 		default:

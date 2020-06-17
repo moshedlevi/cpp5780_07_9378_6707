@@ -45,11 +45,11 @@ ManageStudents::ManageStudents(ManageStudents&& other) {
 	_maxStudent = other._maxStudent;
 	_filePtr = other._filePtr;
 
-	if ((_filename == other._filename) 
-		&& (_maxStudent == other._maxStudent) && (_filePtr == other._filePtr))
+	if ((_filename == other._filename) && (_maxStudent == other._maxStudent) && 
+		(_filePtr == other._filePtr) && !other._lastOperFail)
 		_lastOperFail = false;
 
-	other._filename = nullptr;
+	other._filename = "";
 	other._filePtr = nullptr;
 }
 
@@ -59,11 +59,11 @@ ManageStudents& ManageStudents::operator = (ManageStudents&& other) {
 	_maxStudent = other._maxStudent;
 	_filePtr = other._filePtr;
 
-	if ((_filename == other._filename)
-		&& (_maxStudent == other._maxStudent) && (_filePtr == other._filePtr))
+	if ((_filename == other._filename) && (_maxStudent == other._maxStudent) &&
+		(_filePtr == other._filePtr) && !other._lastOperFail)
 		_lastOperFail = false;
 
-	other._filename = nullptr;
+	other._filename = "";
 	other._filePtr = nullptr;
 
 	return *this;
@@ -375,10 +375,11 @@ bool ManageStudents::operator !() const {
 	return _lastOperFail;
 }
 
-ManageStudents ManageStudents::operator +(const ManageStudents& rhs) const {
+ManageStudents ManageStudents::operator +(ManageStudents& rhs) {
 	ManageStudents ms;
 	uint maxStudent;
-	Student s1, s2;
+	Student s1, s2, s3;
+	uint f = 0;
 	std::string newFilename = "";
 
 	ms._lastOperFail = true;
@@ -386,20 +387,73 @@ ManageStudents ManageStudents::operator +(const ManageStudents& rhs) const {
 	if ((_filePtr == nullptr) || (rhs._filePtr == nullptr))
 		goto return_obj;
 
+	if ((!openFile()) || (!rhs.openFile()))
+		goto return_obj;
+
+newFilenameGen:
 	newFilename = _filename.substr(0, _filename.find_last_of('.', 100));
 	newFilename.append("+");
 	newFilename.append(rhs._filename.substr(0, rhs._filename.find_last_of('.', 100)));
+	newFilename.append((f == 0 ? "" : convert2Cstr(f)));
 	newFilename.append(".dat");
+
+	try {
+		createStudentsFile(newFilename);
+	}
+	catch (const char* err) {
+		f++;
+		goto newFilenameGen;
+	}
+
 	ms.setFileName(newFilename);
 
 	maxStudent = (_maxStudent > rhs._maxStudent ? _maxStudent : rhs._maxStudent);
 
 	for (uint i = 1; i < maxStudent; ++i) {
 
+		s3 = Student::_emptyStudent;
+
+		if (readStudent(i, s1))
+			_lastOperFail = false;
+		else
+			_lastOperFail = true;
+
+		if (rhs.readStudent(i, s2))
+			rhs._lastOperFail = false;
+		else
+			rhs._lastOperFail = true;
+
+		// read from 2 files succeed
+		if (!(!*this) && !(!rhs) && (s1._id != 0) && (s2._id != 0)) {
+			s3 = s1;
+			s3._course1 = (((s1._course1 == 'Y') || (s2._course1 == 'Y')) ? 'Y' : 'N');
+			s3._course2 = (((s1._course2 == 'Y') || (s2._course2 == 'Y')) ? 'Y' : 'N');
+			s3._course3 = (((s1._course3 == 'Y') || (s2._course3 == 'Y')) ? 'Y' : 'N');
+			s3._course4 = (((s1._course4 == 'Y') || (s2._course4 == 'Y')) ? 'Y' : 'N');
+			s3._course5 = (((s1._course5 == 'Y') || (s2._course5 == 'Y')) ? 'Y' : 'N');
+
+		// if read only from lhs succeed
+		} else if (!(!*this) && (s1._id != 0)) {
+			s3 = s1;
+		}
+		// if read only from rhs succeed
+		else if (!(!rhs) && (s2._id != 0)) {
+			s3 = s2;
+		}
+		else {
+			continue;
+		}
+		
+		ms << s3;
 	}
 
+	ms._lastOperFail = false;
+
 return_obj:
+	_lastOperFail = false;
+	rhs._lastOperFail = false;
 	return ms;
+
 }
 
 bool ManageStudents::openFile()

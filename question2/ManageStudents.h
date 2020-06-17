@@ -55,7 +55,7 @@ public:
 
     bool operator !() const;
 
-    ManageStudents operator +(const ManageStudents&) const;
+    ManageStudents operator +(ManageStudents&);
 };
 
 ManageStudents& operator << (ManageStudents& in, const Student&);

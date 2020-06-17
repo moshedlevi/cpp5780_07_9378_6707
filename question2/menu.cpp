@@ -26,9 +26,9 @@ const char* MenuOptionLine[LAST_MENU_OPTION + 1] {
 	"Check registration for student",
 	"Set registration for student",
 	"Cancel registration for student",
+	"Print students list for course",
 	"Print list all registered students",
-	"Combine 2 exist manage files to new Managment file",
-	"Print students list for course"
+	"Combine 2 exist manage files to new Managment file"
 };
 
 istream& operator>>(istream& in, MenuOption& rhs) {

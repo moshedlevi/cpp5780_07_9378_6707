@@ -32,7 +32,7 @@ std::fstream& createStudentsFile(const std::string fileName)
         throw "error opening file!";
     }
 
-    uint startID = 0;
+    uint startID = 10;
         
     // write to file the max number of current students
     newFile.write((char*)&startID, sizeof(startID));
