@@ -16,8 +16,18 @@ std::fstream& createStudentsFile(const std::string fileName)
 {
     std::fstream newFile;
 
+    // try to open file to check if already exist
+    newFile.open(fileName, ios::in | ios::binary);
+
+    // if open file to read success = file already exist
+    if (newFile) {
+        newFile.close();
+        throw "file already exist!";
+    }
+
     newFile.open(fileName,ios::out | ios::binary);
 
+    // if open file to write failed
     if (!newFile) {
         throw "error opening file!";
     }

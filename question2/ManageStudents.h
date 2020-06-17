@@ -16,11 +16,11 @@ class ManageStudents {
 private:
     std::string _filename = "";
     std::fstream* _filePtr = nullptr;
-    bool _fileExist = false;
-    bool _lastOperSucc = true;
+    bool _lastOperFail = false;
     uint _maxStudent = 0;
 
-    void openFile();
+    bool openFile();
+    bool readStudent(uint sid, Student& s);
 
 public:
     ManageStudents() = default;
@@ -43,13 +43,15 @@ public:
 
     void delStudent(const uint sid);
 
-    void regStudent(const uint sid, const uint courseid);
+    void regStudent(const uint sid, const uint courseid, const bool reg);
 
     bool checkStudent(const uint sid, const uint courseid);
 
     void printStudent(const uint sid);
  
     void printRegStudents(const uint courseid = 0);
+
+    std::string getFilename() const;
 
     bool operator !() const;
 

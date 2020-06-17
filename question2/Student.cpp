@@ -21,14 +21,14 @@ fstream& operator<<(fstream& out,const Student& s)
 
 ostream& operator<<(ostream& out, const Student& s)
 {
-	cout << "ID: " << s._id << endl;
-	cout << "Last name: " << s._lastName << endl;
-	cout << "First name: " << s._firstName << endl;
-	cout << "Course 1: " << s._course1 << endl;
-	cout << "Course 2: " << s._course2 << endl;
-	cout << "Course 3: " << s._course3 << endl;
-	cout << "Course 4: " << s._course4 << endl;
-	cout << "Course 5: " << s._course5 << endl;
+	out << "ID: " << s._id << endl;
+	out << "Last name: " << s._lastName << endl;
+	out << "First name: " << s._firstName << endl;
+	out << "Course 1: " << s._course1 << endl;
+	out << "Course 2: " << s._course2 << endl;
+	out << "Course 3: " << s._course3 << endl;
+	out << "Course 4: " << s._course4 << endl;
+	out << "Course 5: " << s._course5 << endl;
 
 	return out;
 }

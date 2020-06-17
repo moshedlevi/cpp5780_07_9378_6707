@@ -19,14 +19,16 @@ MenuOption operator++(MenuOption& rhs) {
 
 const char* MenuOptionLine[LAST_MENU_OPTION + 1] {
 	"Exit",
+	"Open students file to manage",
 	"Add Student to file",
 	"Delete Student from file",
-	"Print info for student"
+	"Print info for student",
 	"Check registration for student",
 	"Set registration for student",
+	"Cancel registration for student",
 	"Print list all registered students",
-	"Print students list for course",
-	"Combine 2 list to new list"
+	"Combine 2 exist manage files to new Managment file",
+	"Print students list for course"
 };
 
 istream& operator>>(istream& in, MenuOption& rhs) {
